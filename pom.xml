@@ -220,9 +220,9 @@
 	</build>
 	<distributionManagement>
 		<repository>
-			<id>github</id>
-			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/StackVista/azure-activedirectory-library-for-java</url>
+			<id>sts-artifactory</id>
+			<name>StackState Artifactory</name>
+			<url>https://artifactory.stackstate.io/artifactory/libs</url>
 		</repository>
 	</distributionManagement>
 </project>
