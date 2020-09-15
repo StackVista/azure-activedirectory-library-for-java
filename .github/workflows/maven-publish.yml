@@ -26,7 +26,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      run: mvn -B deploy
       env:
           MAVEN_USERNAME: ${{ secrets.STS_ARTIFACTORY_USER }}
           MAVEN_PASSWORD: ${{ secrets.STS_ARTIFACTORY_PASSWORD }}
